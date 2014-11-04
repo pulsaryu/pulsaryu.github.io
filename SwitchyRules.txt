@@ -23,6 +23,7 @@
 *://*.shadowsocks.org/*
 *://*.android.com/*
 *://*.dropbox.com/*
+*://*.flickr.com/*
 [regexp]
 
 
