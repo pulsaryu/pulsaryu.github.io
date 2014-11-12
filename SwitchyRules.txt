@@ -25,6 +25,7 @@
 *://*.dropbox.com/*
 *://*.flickr.com/*
 *://*.twimg.com/*
+*://*.amazonaws.com/*
 [regexp]
 
 
