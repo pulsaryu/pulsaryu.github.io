@@ -4,10 +4,11 @@ title : 读取短信分组
 category : blog
 tags : [Android, 短信]
 ---
-
+ 
 源码的`android.provider.Telephony`类包含了有关短信操作的内容。
 这个类中有一个内部类`Conversations`, 它包含了一些短信分组的信息:
-{% highlight java %}
+
+```java
 public static final class Conversations
         implements BaseColumns, TextBasedSmsColumns {
     /**
@@ -33,7 +34,8 @@ public static final class Conversations
      */
     public static final String MESSAGE_COUNT = "msg_count";
 }
-{% endhighlight %}
+```
+
 通过这个类，我们知道短信分组的uri是"content://sms/conversations".
 
 通过"content://sms/conversations"查询的时候, 返回的数据包括3个字段, 分别是:`thread_id`,`msg_count`和`snippet`. 
@@ -42,7 +44,8 @@ public static final class Conversations
 
 
 一个Demo
-{% highlight java %}
+
+```java
 Uri uri = Uri.parse("content://sms/conversations");
 Cursor cursor = getContentResolver().query(uri, null, null, null, "date DESC");
 
@@ -68,4 +71,4 @@ if (cursor != null) {
 	
 	cursor.close();
 }
-{% endhighlight %}
+```

@@ -1,57 +1,69 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>{{site.name}} - {{page.title}}</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <meta name="author" content="Issac Wong">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link rel="stylesheet" href="/stylesheets/syntax.css">
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="{{ site.url }}/favicon.png" rel="shortcut icon">
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]><script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+    <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 </head>
-<body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">{{site.name}}</a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Blogs</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
+<body>
+<div class="container">
+<div class="left-col">
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <div class="profilepic">
+        </div>
+            <hgroup>
+                <h1><a href="{{ site.url }}/">{{ site.name }}</a></h1>
+            </hgroup>
+            <p class="subtitle">Simple and clear</p>
+            <nav id="main-nav"><ul class="main-navigation">
+                <li><a href="{{ site.url }}/">Blog</a></li>
+                <li><a href="{{ site.url }}/about">About me</a></li>
+            </ul>
+
+            </nav>
+            <nav id="sub-nav">
+                <div class="social">
+                    <a class="weibo" href="#" title="Weibo">Weibo</a>
+                    <a class="google" href="#" rel="author" title="Google+">Google+</a>
+                    <a class="github" href="#" title="GitHub">GitHub</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+</div>
+
+
+<div class="mid-col">
+    <div class="mid-col-container">
+        <div id="content" class="inner">
+            {{content}}
         </div>
     </div>
-
-    <div class="container">
-        {{content}}
-    </div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-40303585-1");
-        pageTracker._trackPageview();
-    } catch (err) {
-    }
-</script>
-
+    <footer id="footer" class="inner">
+        <p>
+            Copyright &copy; 2014  Pulsar
+        </p>
+    </footer>
+</div>
+</div>
+<link rel="stylesheet" href="http://yandex.st/highlightjs/7.1/styles/default.min.css">
+<script src="http://apps.bdimg.com/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

@@ -104,7 +104,7 @@ public void setChecked(boolean checked) {
 
 至此一个自定义的CheckedTextView就完成了. 
 
-通常`refreshDrawableState`要和`getDrawableState`一起使用. 使用`refreshDrawableState`会强制刷新drawable的状态, 同时会调用`drawableStateChanged`. 对于一个新的状态, 将调用`getDrawableState`.
-我们这里的`state_checked`就是一个新的状态.
+通常`refreshDrawableState`要和`getDrawableState`一起使用。使用`refreshDrawableState`会强制刷新drawable的状态，同时会调用`drawableStateChanged`。
+对于一个新的状态，将调用`getDrawableState`。我们这里的`state_checked`就是一个新的状态。
 
 

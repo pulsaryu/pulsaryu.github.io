@@ -1,6 +1,8 @@
-name: Yux
+name: Pulsar
 markdown: redcarpet
-pygments: true
 encoding: utf-8
 excerpt_separator: "\n\n\n"
 timezone: Asia/Chongqing
+redcarpet:
+  extensions: [fenced_code_blocks]
+  render_options:
