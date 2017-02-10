@@ -20,7 +20,7 @@ layout : default
             <h1 class="title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
 
             <div class="entry-content" itemprop="articleBody">
-                {{ post.content }}
+                {{ post.excerpt }}
                 {% if post.continue %}
                     <a href="{{ post.url }}" class="more-link">Continue Reading</a>
                 {% endif %}

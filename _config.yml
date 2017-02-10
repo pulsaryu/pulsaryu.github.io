@@ -3,3 +3,4 @@ markdown: redcarpet
 encoding: utf-8
 excerpt_separator: "\n\n\n"
 timezone: Asia/Chongqing
+excerpt_separator: <!--more-->
