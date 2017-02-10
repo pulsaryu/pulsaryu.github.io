@@ -1,5 +1,5 @@
 name: Pulsar
-markdown: redcarpet
+markdown: kramdown
 encoding: utf-8
 excerpt_separator: "\n\n\n"
 timezone: Asia/Chongqing
