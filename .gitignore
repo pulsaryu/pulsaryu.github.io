@@ -2,3 +2,4 @@
 /_site/
 .vagrant
 *.log
+.DS_Store

@@ -17,12 +17,12 @@ layout : default
 
                 <span class="comments"><a href="#">Comments</a></span>
             </div>
-            <h1 class="title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
+            <h1 class="title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
 
             <div class="entry-content" itemprop="articleBody">
                 {{ post.excerpt }}
                 {% if post.continue %}
-                    <a href="{{ post.url }}" class="more-link">Continue Reading</a>
+                    <a href="{{ site.baseurl }}{{ post.url }}" class="more-link">Continue Reading</a>
                 {% endif %}
             </div>
 
