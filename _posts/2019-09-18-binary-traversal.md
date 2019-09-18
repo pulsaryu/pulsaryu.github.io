@@ -18,7 +18,7 @@ tags: [算法, 二叉树]
 
 如下图，剪头表示了前序遍历的顺序：
 
-<img src="assets/image-20190917113056041.png" alt="image-20190917113056041" style="zoom:50%;" />
+<img src="/images/binary-tree-dfs.webp" alt="深度优先遍历" style="zoom:50%;" />
 
 遍历输出结果为：1245367
 
@@ -128,7 +128,7 @@ private List<Integer> postorderTraversal(TreeNode root) {
 
 先对上层节点进行遍历，然后再对下层节点遍历。如下图，剪头表示遍历的方向：
 
-<img src="assets/image-20190917113608462.png" alt="image-20190917113608462" style="zoom:50%;" />
+<img src="/images/binary-tree-bfs.webp" alt="广度优先遍历" style="zoom:50%;" />
 
 遍历输出的结果为：1234567
 
