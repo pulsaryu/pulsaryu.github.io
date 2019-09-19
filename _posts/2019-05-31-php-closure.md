@@ -21,6 +21,9 @@ if ($fun instanceof Closure) {
 ```
 
 以上会输出
+
+<!--more-->
+
 ```
 fun is closure
 ```
@@ -57,7 +60,7 @@ $fun = function(){
 $a = new A;
 
 //第二个参数传入类名，才可以访问的私有方法，否则按照默认作用域。
-$funx = $fun->bindTo($a, 'A'); 
+$funx = $fun->bindTo($a, 'A');
 
 $funx();
 ```
