@@ -3,12 +3,31 @@ layout : default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <h1 class="title" itemprop="name">{{page.title}}</h1>
+
+    <div>
+      {% for tag in page.tags %}
+          {{ tag }}
+      {% endfor %}
+    </div>
+
     <div class="entry-content" itemprop="articleBody">
         {{content}}
     </div>
 
 </article>
-<section id="comment">
-    <h1 class="title">Comments</h1>
-    {% include disqus.html %}
-</section>
+
+<div id="comments"></div>
+<script type="text/javascript">
+const gitment = new Gitment({
+  id: '1',
+  owner: 'pulsaryu',
+  repo: 'blog',
+  oauth: {
+    client_id: 'ebf37648064ac674135b',
+    client_secret: '53632b38c29b0437396df16d3711c3e3f54f8ea0',
+  },
+  // ...
+  // For more available options, check out the documentation below
+})
+  gitment.render('comments')
+</script>
