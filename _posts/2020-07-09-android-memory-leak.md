@@ -6,6 +6,9 @@ tags: [Android, Memory]
 ---
 
 内存泄漏是引起Android应用崩溃常见的原因，每个Android开发人员都应该明白怎么避免发送。
+
+<!--more-->
+
 常用的分析内存的工具有 **Android Profiler** 和 **LeakCanary**。
 
 ##  **Android Profiler** 和 **LeakCanary**。
